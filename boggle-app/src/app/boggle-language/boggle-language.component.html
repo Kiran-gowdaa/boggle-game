@@ -1,0 +1,14 @@
+<div class="container">
+  <span class="lang-text"> {{ "app lanaguage" | translate }}:</span>
+  <select class="form-select" (change)="changeLanguage($event)">
+    <option [selected]="lang === 'en'" value="en">
+      {{ "english" | translate }}
+    </option>
+    <option [selected]="lang === 'fr'" value="de">
+      {{ "german" | translate }}
+    </option>
+    <option [selected]="lang === 'fr'" value="fr">
+      {{ "french" | translate }}
+    </option>
+  </select>
+</div>

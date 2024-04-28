@@ -1,0 +1,7 @@
+<div class="board-container">
+  <div class="row" *ngFor="let row of diceAlphabets">
+    <div class="small-block" *ngFor="let die of row">
+      <span class="alphabets" (click)="selectedDice(die)">{{ die }}</span>
+    </div>
+  </div>
+</div>

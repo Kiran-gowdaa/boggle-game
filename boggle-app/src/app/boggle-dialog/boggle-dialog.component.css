@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: 34px;
+  background: lightgray;
+  height: 100%;
+}
+
+::ng-deep.mat-mdc-dialog-container {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 25%;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: -20px 18px 8px rgb(0 0 0 / 54%);
+}
+
+.button-restart {
+  width: 126px;
+  height: 50px;
+  border-radius: 20px;
+  background: #27be56;
+  font-family: "Press Start 2P", sans-serif;
+  box-shadow: 3px 7px 8px rgb(0 0 0 / 54%);
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.dialog-text {
+  font-family: "Press Start 2P", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  color: #0101c3;
+  font-size: 16px;
+}

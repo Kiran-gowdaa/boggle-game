@@ -1,0 +1,14 @@
+<div class="container">
+  <app-boggle-timer
+    class="timer"
+    [currentPlayer]="currentPlayer"
+    (timeUp)="switchPlayer()"
+  ></app-boggle-timer>
+  <app-boggle-header></app-boggle-header>
+  <app-boggle-language class="language"></app-boggle-language>
+</div>
+<app-boggle-holder
+  [playerName]="currentPlayer"
+  (playerScore1)="playerScore1($event)"
+  (playerScore2)="playerScore2($event)"
+></app-boggle-holder>

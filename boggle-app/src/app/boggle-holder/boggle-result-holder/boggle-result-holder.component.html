@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="top-layer">
+    <input
+      class="input-field"
+      type="text"
+      placeholder="Click or Enter your word"
+      [(ngModel)]="inputValue"
+      (ngModelChange)="onInputChange($event)"
+    />
+    <div *ngIf="invalidInput" class="error-message">
+      *Invalid input! Only alphabets are allowed!
+    </div>
+    <button
+      class="submit-button"
+      [disabled]="invalidInput"
+      (click)="submitValue()"
+    >
+      {{ "submit" | translate }}
+    </button>
+  </div>
+
+  <div class="word-list-container">
+    <span class="words" *ngFor="let word of wordsList; let last = last"
+      >{{ word }}{{ !last ? ", " : "" }}</span
+    >
+  </div>
+
+  <div class="total">
+    <span class="total-word"> {{ "total" | translate }}: {{ totalScore }}</span>
+  </div>
+</div>
+
+<div class="player-name">{{ playerName }}</div>

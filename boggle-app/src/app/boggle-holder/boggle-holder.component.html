@@ -1,0 +1,38 @@
+<app-boggle-result-holder
+  *ngIf="playerName === 'Cyborg99'; else timeUpTemplate"
+  [playerName]="'Cyborg99'"
+  [keyPadValue]="keyPadValue"
+  [wordsList]="player1WordsList"
+  [totalScore]="player1Score"
+  (inputValueChange)="inputValuePlayer1($event)"
+></app-boggle-result-holder>
+<app-boggle-dice-holder
+  [diceAlphabets]="generatedAlphabets"
+  (keyPadValue)="keyPadAlphabet($event)"
+></app-boggle-dice-holder>
+<app-boggle-result-holder
+  *ngIf="playerName === 'Strike Eagle'; else waitTurnTemplate"
+  [playerName]="'Strike Eagle'"
+  [keyPadValue]="keyPadValue"
+  [wordsList]="player2WordsList"
+  [totalScore]="player2Score"
+  (inputValueChange)="inputValuePlayer2($event)"
+></app-boggle-result-holder>
+
+<ng-template #waitTurnTemplate>
+  <div class="wait-turn-card">
+    <div>
+      <span class="wait-text">{{ "wait for your turn" | translate }}!</span>
+      <img class="clock" src="assets/clock.svg" alt="Logo" />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #timeUpTemplate>
+  <div class="wait-turn-card">
+    <div>
+      <span class="wait-text">{{ "times up" | translate }}!</span>
+      <img class="clock" src="assets/clock.svg" alt="Logo" />
+    </div>
+  </div>
+</ng-template>

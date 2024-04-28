@@ -1,0 +1,40 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid burlywood;
+  border-radius: 14px;
+  margin-top: -120px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.small-block {
+  flex: 1;
+  height: 100px;
+  margin: 2px;
+  border: 2px solid burlywood;
+  background: antiquewhite;
+}
+
+.small-block:hover {
+  background-color: white;
+}
+
+.alphabets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}

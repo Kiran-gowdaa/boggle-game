@@ -1,0 +1,27 @@
+:host {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.timer {
+  padding-top: 60px;
+  position: absolute;
+  left: 40px;
+}
+
+.language {
+  padding-top: 60px;
+  position: absolute;
+  right: 40px;
+}
