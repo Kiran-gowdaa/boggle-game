@@ -28,7 +28,7 @@ Note:
 
 # The complete logic of the game can be seen in the form of flow chart
 
-Open the `BCT-Boggle-Game-FlowChart.png` to see the working logic, which you can find it in main directory.
+Open the `Boggle-Game-FlowChart.png` to see the working logic, which you can find it in main directory.
 
 # Before running locally, check/follow the steps.
 
